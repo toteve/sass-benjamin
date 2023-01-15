@@ -1,0 +1,51 @@
+// importando fuentes desde Google Fonts, preferencia al inicio
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+$font-family-base: 'Oswald', sans-serif;
+
+// Activar carácteristicas adicionales a Bootstrap
+$enable-shadows: true;
+
+// todo uso de variables para incorporar cambio debe ir antes de importar el archivo de bootstrap.scss
+$primary: rgb(17, 211, 225);
+
+
+// Inicializamos colores base, estos se reemplazarán en toda la librería de Bootstrap.
+$secondary: #417acf;
+$success: #59db2d;
+$info: #6f42c1;
+$warning: #fdf914;
+$danger: #ce2626;
+$light: rgb(226, 225, 225);
+$dark: black;
+$purple:rgb(200, 0, 255);
+
+// Theme colors es la paleta principal de Bootstrap, con esta puedes agregar tus propios colores adicionales//
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "purple-900": $purple
+);
+
+// importar el bootstrap.scss
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//clases personalizadas//
+
+.new{ 
+  background-color: black;
+  padding: 10px;
+  height: 400px;
+  
+}
+  
+.card1 {
+
+    @extend .new
+}
